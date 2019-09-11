@@ -30,5 +30,6 @@ public class khpalaArray {
         {
             System.out.print(list[i] + " ");
         }
+        System.out.println("Adding a test line...");
     }
 }
