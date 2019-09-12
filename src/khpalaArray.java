@@ -23,6 +23,7 @@ public class khpalaArray {
     
     public int searchElement(int key)
     {
+        return 0;
         
     }
     
