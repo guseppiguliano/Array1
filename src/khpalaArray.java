@@ -19,31 +19,42 @@ public class khpalaArray {
             System.out.print("Enter element[" + i + "]: ");
             list[i] = input.nextInt();
         }
+        System.out.println();
     }
     
-    public int searchElement(int key)
+    public void searchElement(int key)
     {
-        return 0;
-        
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] == key) {
+		System.out.println("Requested element found at index: " + i);
+                break;
+            }
+	    else
+		System.out.println("Element not found!");
+        }
+        System.out.println();
+    }
+    
+    public void deleteElement(int key)
+    {
+	for (int i = 0; i < list.length; i++) {
+	    if (list[i] == key) {
+//		todo
+	    }
+	}
     }
     
     public void printArray()
     {
         System.out.println("Array elements are: ");
-        
-        for (int i = 0; i < list.length; i++) {
+        for (int i = 0; i < list.length; i++)
             System.out.print(list[i] + " ");
-        }
+	
+        System.out.println();
     }
-    
-    public void deleteElement(int num)
+        
+    public void modifyElement(int key)
     {
-        int index = -1;
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] == num) {
-                index = i;
-                break;
-            }
-        }
+        
     }
 }
